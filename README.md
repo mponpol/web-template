@@ -1,6 +1,6 @@
 # web-template
 
-Web design template with next estructure:
+Web design template with next estructure: 
 |-- css
 | |-- fonts
 | |-- style.css
