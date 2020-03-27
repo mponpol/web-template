@@ -1,0 +1,26 @@
+/* Basic reset */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* Box sizing isn't inherited, so we allow this property */
+
+}
+
+html {
+    /* Defining 1rem:
+    Because root font size uses to be 16px, then 1rem = 16px. Setting root font size to
+    10px allows us to calculate in an easy way rem measures. But if customer has changed his
+    default font (making it bigger or smaller), then best practice is to use percentages.
+    10/16 = 0.625, so we will use 62.5% */
+    font-size: 62.5%;
+}
+
+body {
+    /* Changes box model so that the borders and the paddings are no longer
+    added to the total width or the total height that we specify for a box.
+    Default value is 'content-box'*/
+    box-sizing: border-box;
+}
